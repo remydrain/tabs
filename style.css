@@ -53,7 +53,7 @@ img {
     border-top-right-radius: .5rem;
 }
 
-.btn:hover {
+.btn:hover not(.live) {
     background-color: #4a2590;
     color: #E7759A;
 }
@@ -71,4 +71,16 @@ img {
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
     }
+}
+
+.content {
+    display: none;
+}
+
+.content.live {
+    display: block;
+}
+
+.btn.live {
+    background-color: #FFA35F;
 }
